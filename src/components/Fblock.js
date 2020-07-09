@@ -5,7 +5,7 @@ import BackdropImg from '../../static/meta_img/ellipse.png'
 const Fblock = () =>{
     return(
         <>
-            <section className="block-wrapper">
+            <section className="hero-page block-wrapper">
                 <div className="hero-text-wrapper">
                  
                     

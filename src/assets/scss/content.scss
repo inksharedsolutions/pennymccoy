@@ -1,6 +1,5 @@
 
 
-
 .block-wrapper{
     background: #292E33;
     width: 100%;
@@ -74,7 +73,7 @@
     z-index: 2;
 
     .big-title{
-        font-size: 8vw;
+        font-size: 8rem;
         margin: 31px auto;
         text-transform: uppercase;
         font-weight: 900;
@@ -123,6 +122,19 @@
     justify-content: center;
     position: relative;
     z-index: 10;
+}
+
+
+.section-book-trailer,
+.author-section,
+.artwork-contents
+{
+    position: absolute;
+    left:0;
+    bottom:0;
+    opacity: 0;
+    pointer-events: none;
+
 }
 
 .heading-trailer{
@@ -192,24 +204,41 @@
 
 /*video-react*/
 .video-react{
-    width: 650px !important;
+    width: 570px !important;
     border: 6px solid #fff;
     box-shadow: 0px 1px 44px 10px #1e1e1e;
 }
-
-
 
 
 .heading-artwork{
     font-size: 5rem;
     span{
         color: #fff;
+        &:nth-child(1){
+            margin-top: 10px; 
+            display: block;
+        }
+
         &:nth-child(2){
+            text-transform: lowercase;
             display: block;
         }
     }
 
     p{
-        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 9px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    &:before{
+        content: "";
+        width: 10%;
+        background: #ff9d00;
+        position: absolute;
+        display: inline-block;
+        height: 4px;
+        transform: translateY(-31px);
     }
 }

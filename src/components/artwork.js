@@ -9,8 +9,6 @@ import "slick-carousel/slick/slick-theme.css";
     Images 
 =======================
 */
-
-
 import Book1 from '../../static/artworks/1.jpg'
 import Book2 from '../../static/artworks/2.jpg'
 import Book3 from '../../static/artworks/3.jpg'
@@ -29,7 +27,7 @@ const Artwork = ()=>{
             __functState(window.innerWidth <= 760);
         });
 
-      }, [mobState]); 
+      }, [mobState,__functState]); 
 
 
 
@@ -44,7 +42,7 @@ const Artwork = ()=>{
 
     return(
         <>
-             <section className="block-wrapper artwork-contents">
+             <section className="hero-page block-wrapper artwork-contents">
                 <div className="container">
                     <div className="artwork-author-content">
                         <div className="col-two-grid-slider-element">
@@ -74,6 +72,7 @@ const Artwork = ()=>{
                                     <div className="book-wrapper-slider">
                                         <img src={Book4}/>
                                     </div>
+
                                     <div className="book-wrapper-slider">
                                         <img src={Book5}/>
                                     </div>

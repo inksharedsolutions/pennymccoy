@@ -10,7 +10,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import Sidebar from "./sidebar"
 import SideBar from "./sidebar"
 
 const Layout = ({ children }) => {
@@ -20,12 +19,14 @@ const Layout = ({ children }) => {
       <Header siteTitle={`Penny Mccoy`} />
       <SideBar />
 
-        <main>
-            {children}
+        <main className="pages">
+            {
+              children
+            }
         </main>
-
     </>
   )
+
 }
 
 

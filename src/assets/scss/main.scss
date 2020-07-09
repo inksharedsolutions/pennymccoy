@@ -63,10 +63,14 @@ p{
 }
 
 button{
-    background-color: rgb(255, 202, 0);
+
+    background-color: #1e2328;
     border: none;
-    padding: 2% 20px;
+    padding: 7% 35px;
     margin-top: 6%;
+    color: #ffff;
+    border: 1px solid #404040;
+
     a{
         color: #fff !important;
         text-decoration: none;
@@ -95,4 +99,30 @@ button{
     display: grid;
     grid-template-columns: 35% 1fr;
     gap: 25px;
+}
+
+.button-container{
+    position: fixed;
+    top: 0;
+    display: flex;
+    height: 89vh;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transform: translateX(227px);
+    z-index: 99;
+
+}
+
+.btn-prev,
+.btn-next{
+    margin: 0 5px;
+    
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+
+.position-active{
+    
 }
