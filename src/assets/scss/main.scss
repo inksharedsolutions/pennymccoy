@@ -123,6 +123,13 @@ button{
 }
 
 
-.position-active{
-    
+.active-page{
+    position: static !important;
+    opacity: 1 !important;
+    pointer-events:auto;
+}
+
+.section-parent-book-trailer{
+    position: relative;
+    z-index: 10;
 }

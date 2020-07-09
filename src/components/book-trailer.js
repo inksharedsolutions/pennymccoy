@@ -20,7 +20,7 @@ const BookTrailerComponents = () =>{
         <>
             <section className="hero-page block-wrapper section-book-trailer">
                 <div className="container">
-                    <div className="section-book-trailer">
+                    <div className="section-parent-book-trailer">
                         <div className="col-two-grid-element">
                             <div className="grid-child heading-trailer">
                                 <h1> Book Trailer</h1>

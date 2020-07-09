@@ -19,7 +19,7 @@ const ButtonClick = (props)=>{
     }
 
     const rightClicks = (e)=>{
-        return btnState < limit ?  __stateFunc(btnState + 1) : btnState;  
+        return btnState < limit ?  __stateFunc(btnState + 1) : btnState;
     }
 
     return(

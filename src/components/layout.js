@@ -9,6 +9,7 @@ import React, {useRef,useEffect} from "react"
 
 import Header from "./header"
 import SideBar from "./sidebar"
+import {TweenMax , Power3} from 'gsap'
 
 const Layout = ({
     mainActivePage, 
@@ -48,7 +49,16 @@ const Layout = ({
     const prevSibling =  el.previousSibling;
     const nextSibling =  el.nextSiblings;
 
-    console.log(prevSibling);
+
+    
+    TweenMax.to(prevSibling, .8,{
+      opacity :1,
+      position: 'absolute',
+      left: 0,
+      bottom: 0,
+      opacity: 0,
+      pointerEvents: 'none'
+    })
 
   }
 
