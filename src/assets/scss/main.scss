@@ -5,6 +5,14 @@
 @import 'navigation';
 @import 'content';
 @import 'footer';
+@import 'slick-customize';
+
+@font-face {
+    font-family:"augusta-free"; /*a name to be used later*/
+    src: url("../../../static/fonts/august_free_bold.ttf") format('truetype'); /*URL to font*/
+    // font-weight: normal;
+}
+
 
 *,
 *::after,
@@ -45,7 +53,7 @@ h5,h6{
 
 p,a,qoute,span,blockquote{
     font-size: 1.2em;
-    color: #4c4c4cee;
+    color: #e6e6e6ee;
 }
 
 
@@ -67,3 +75,24 @@ button{
 }
 
 
+.italic-element{
+    font-family: "augusta-free";
+}
+
+
+.col-two-grid-element{
+    display: grid;
+    grid-template-columns: 51% 1fr;
+    gap: 25px;
+}
+
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.col-two-grid-slider-element{
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    gap: 25px;
+}

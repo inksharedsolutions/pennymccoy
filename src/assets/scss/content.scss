@@ -29,7 +29,9 @@
 
         .hero-meta-img{
             img{
-                width: 37%;
+                width: 571px;
+                position: relative;
+                z-index: 2;
             }
         }
     }
@@ -45,16 +47,22 @@
     margin: 0 auto;
 
     &:before{
-        content:'';
-        background: url('../../../static/meta_img/ellipse.png') no-repeat;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        z-index: -1
+        // content:'';
+        // background: url('../../../static/meta_img/ellipse.png') no-repeat;
+        // position: absolute;
+        // height: 50%;
+        // width: 100%;
+        // z-index: -1;
+        // transform: translate(-28px, 25px);
+    }
+
+    img{
+        position: absolute !important;
+        z-index: 1 !important;
+        width: 560px !important;
+        transform: translate(-30px, 21px);
     }
 }
-
-
 
 .heading-hero-wrapper{
 
@@ -63,6 +71,7 @@
     width: 100%;
     left: 0;
     transform: translateY(69px);
+    z-index: 2;
 
     .big-title{
         font-size: 8vw;
@@ -91,5 +100,116 @@
             margin: 0px 11%;
             font-size: 2vw;
         }
+    }
+}
+
+.element-parent{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.section-book-trailer,
+.section-author-content,
+.artwork-author-content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.heading-trailer{
+    h1{
+        font-size: 6vw;
+    }
+}
+
+
+.author-wrapper{
+    text-align: center;
+    img{
+        max-width: 100%; 
+        width: 424px;
+        position: relative;
+    }
+
+    &:before{
+        content:'';
+        background: url('../../../static/meta_img/rect_shaded.png') no-repeat;
+        position: absolute;
+        width: 45%;
+        height: 581px;
+        left: 0;
+  
+    }
+}
+
+
+.author-content{
+    h1{
+
+        font-size: 4rem;
+        text-transform: uppercase;
+        color: #4a4a4a;
+        transform: translateX(-80px);
+
+        span{
+            color: #4a4a4a; 
+        }
+    }
+    span{
+        display: block;
+        font-size: 4rem;
+    }
+}
+
+.author-name{
+
+    text-align: right;
+
+    .f-name{
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #cd8441;
+    }
+
+    .tag-author{
+        font-size: 20px;
+        display: block;
+        margin-top: 3em;
+        letter-spacing: 10px;
+        color: #797474;
+    }
+}
+
+/*video-react*/
+.video-react{
+    width: 650px !important;
+    border: 6px solid #fff;
+    box-shadow: 0px 1px 44px 10px #1e1e1e;
+}
+
+
+
+
+.heading-artwork{
+    font-size: 5rem;
+    span{
+        color: #fff;
+        &:nth-child(2){
+            display: block;
+        }
+    }
+
+    p{
+        font-size: 16px;
     }
 }

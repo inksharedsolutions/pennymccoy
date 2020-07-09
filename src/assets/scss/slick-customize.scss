@@ -1,0 +1,68 @@
+/*Slick Custom*/
+
+.slick-slider{
+    margin: 0 70px;
+}
+
+.slick-initialized .slick-slide{
+    text-align: center;
+    padding: 0 10px;
+    h3{
+        font-size: 19px;
+        color: #fff;
+        margin: 0.6em;
+        font-weight: bold;
+    }
+    span{
+        font-size: 12px;
+        color: #929292 !important;
+    }
+}
+
+.slick-slide{
+    width: 100%;
+}
+
+.slick-active{
+    text-align: center !important;
+
+    img{
+        margin: 0 auto;
+    }
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #fdda55 !important;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: #fee380 !important;
+    position: relative;
+    z-index: 10 !important;
+    font-size: 40px !important;
+}
+
+.slick-prev, .slick-next{
+    margin:0 !important;
+}
+
+.slick-prev{
+    z-index: 10 !important;
+    left: 0 !important;
+}
+
+.slick-next{
+    right: 15px !important;
+}
+
+.slick-track{
+    width: 556px !important;
+}
+
+
+.book-wrapper-slider{
+    img{
+        width: 250px;
+    }
+} 

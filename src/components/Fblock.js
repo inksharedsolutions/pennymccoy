@@ -1,6 +1,6 @@
 import React from 'react'
 import Img from '../../static/meta_img/God_img.png'
-
+import BackdropImg from '../../static/meta_img/ellipse.png'
 
 const Fblock = () =>{
     return(
@@ -25,7 +25,7 @@ const Fblock = () =>{
                         </div>
                         <div className="hero-meta-img">
                             <div className="img-backdrop">
-
+                                <img src={BackdropImg}/>
                             </div>
                             <img src={Img}/>
                         </div>
