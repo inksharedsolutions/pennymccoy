@@ -7,6 +7,8 @@ import BookTrailer from "components/book-trailer"
 import Author from "components/author"
 import Artwork from "components/artwork"
 import Button from "components/button"
+import Counter from "components/counter"
+
 
 const IndexPage = () => {
 
@@ -25,6 +27,8 @@ const IndexPage = () => {
       <Author/>
       <Artwork/>
       <Button activePage={(num)=> _pF(num) }/>
+      <Counter num={parentState} />
+      
     </Layout>
   )
 }

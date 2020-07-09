@@ -242,3 +242,31 @@
         transform: translateY(-31px);
     }
 }
+
+
+.counter{
+    position: absolute;
+    top: 0;
+    display: flex;
+    height: 89vh;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 99;
+    right: 11%;
+
+    .counter-active{
+        font-size: 38px;
+        font-weight: bold;
+        color: #ffff;
+        transform: translateX(-13px);
+        -webkit-transform: translateY(-13px);
+        -moz-transform: translateY(-13px);
+    }
+
+    .limit{
+        color: #ff9d00;
+        -webkit-transform: translate(10px, -33px);
+        -moz-transform: translateY(-20px);
+        font-weight: bold;
+    }
+}

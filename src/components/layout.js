@@ -51,7 +51,7 @@ const Layout = ({
 
 
     
-    TweenMax.to(prevSibling, .8,{
+    TweenMax.to(prevSibling, 1,{
       opacity :1,
       position: 'absolute',
       left: 0,
