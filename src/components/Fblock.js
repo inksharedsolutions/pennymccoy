@@ -1,5 +1,5 @@
 import React from 'react'
-import Img from '../../static/meta_img/God_img.png'
+import Img from '../../static/meta_img/god_img.png'
 import BackdropImg from '../../static/meta_img/ellipse.png'
 
 const Fblock = () =>{

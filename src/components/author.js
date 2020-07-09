@@ -5,7 +5,7 @@ import AuthorImg from '../../static/author/author_img.png'
 const Author = () =>{
     return(
        <> 
-           <section className="block-wrapper author-section">
+           <section className="hero-page block-wrapper author-section">
                 <div className="container">
                     <div className="section-author-content">
                         <div className="col-two-grid-element">

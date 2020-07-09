@@ -4,17 +4,15 @@ import {LeftOutlined, RightOutlined} from '@ant-design/icons';
 const limit = 4;
 
 
-const ButtonClick = ()=>{
+const ButtonClick = (props)=>{
 
     const [btnState, __stateFunc] = useState(1);
 
-
     useEffect(()=>{
-
-        console.log(btnState);
+        
+       props.activePage(btnState)
 
     },[btnState, __stateFunc])
-
 
     const leftClicks = (e)=>{
         return  btnState > 1 ?  __stateFunc( btnState - 1) : btnState;
@@ -24,9 +22,7 @@ const ButtonClick = ()=>{
         return btnState < limit ?  __stateFunc(btnState + 1) : btnState;  
     }
 
-
     return(
-
         <>
             <div className="button-container">
                 <button className="btn-prev" onClick={(e)=> leftClicks(e)}>

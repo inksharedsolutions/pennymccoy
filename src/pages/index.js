@@ -10,13 +10,21 @@ import Button from "components/button"
 
 const IndexPage = () => {
 
+  const [parentState, _pF] = useState(1);
+
+
+  useEffect(()=>{
+
+
+  }, parentState , _pF)
+
   return(
-    <Layout>
+    <Layout mainActivePage={parentState}>
       <Fblock/>
       <BookTrailer/>
       <Author/>
       <Artwork/>
-      <Button />
+      <Button activePage={(num)=> _pF(num) }/>
     </Layout>
   )
 }
