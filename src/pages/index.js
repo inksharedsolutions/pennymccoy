@@ -28,7 +28,6 @@ const IndexPage = () => {
       <Artwork/>
       <Button activePage={(num)=> _pF(num) }/>
       <Counter num={parentState} />
-      
     </Layout>
   )
 }

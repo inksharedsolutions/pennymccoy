@@ -1,0 +1,52 @@
+/***
+*   
+*   Media Queries Starts here
+*
+***/
+
+ 
+@media only screen and (max-width: 1450px) {
+    .container{
+        max-width: 900px !important;
+        margin: 0 auto;
+    }
+
+    .video-react{
+        width: 460px !important;
+    }
+
+    .slick-list{
+        width: 500px;
+    }
+
+    .heading-hero-wrapper{
+        .small-title {
+            span{
+                margin: 0px 16%;
+            }
+        }
+    }
+
+    .author-wrapper{
+        img{
+            width: 300px;
+            
+        }
+
+        &:before{
+            height: 452px;
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 1260px){
+    .nav-list{
+        li{
+            a{
+                font-size: 5em;
+            }
+        }
+    }
+}

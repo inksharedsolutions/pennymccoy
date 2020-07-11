@@ -69,12 +69,16 @@ const Layout = ({
       <SideBar />
 
         <main className="pages" ref={mainRefs}>
-            {
-              children
-            }
+          {
+            children
+          }
         </main>
     </>
   )
+    
+  /*
+  * main cla
+  */
 
 }
 

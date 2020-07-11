@@ -6,6 +6,7 @@
 @import 'content';
 @import 'footer';
 @import 'slick-customize';
+@import 'media';
 
 @font-face {
     font-family:"augusta-free"; /*a name to be used later*/
@@ -22,7 +23,7 @@
 	line-height: 1;
 	box-sizing:border-box;
 }
-  
+
 p{
 	line-height: 2;
 }
@@ -90,6 +91,12 @@ button{
     gap: 25px;
 }
 
+.big-heading-trailer{
+    span{
+        display: block;
+    }
+}
+
 .container{
     max-width: 1250px;
     margin: 0 auto;
@@ -110,7 +117,6 @@ button{
     align-items: flex-end;
     transform: translateX(227px);
     z-index: 99;
-
 }
 
 .btn-prev,

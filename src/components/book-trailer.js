@@ -23,7 +23,12 @@ const BookTrailerComponents = () =>{
                     <div className="section-parent-book-trailer">
                         <div className="col-two-grid-element">
                             <div className="grid-child heading-trailer">
-                                <h1> Book Trailer</h1>
+                                
+                                <h1 className="big-heading-trailer"> 
+                                    <span>Book</span>
+                                    <span>Trailer</span>
+                                </h1>
+
                                 <p>
 
                                     Lorem Ipsum is simply dummy text of the

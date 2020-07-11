@@ -8,8 +8,8 @@ const Counter = (props)=>{
                 <span className="counter-active">{`0${props.num}`} / </span>
                 <span className="limit"> 04</span>
             </section>
-        </> 
-    )   
+        </>
+    )
 }
 
 
