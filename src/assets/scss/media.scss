@@ -18,6 +18,9 @@
     .slick-list{
         width: 500px;
     }
+    .commentSection{
+        max-width: 900px !important;
+    }
 
     .heading-hero-wrapper{
         .small-title {
@@ -25,27 +28,73 @@
                 margin: 0px 16%;
             }
         }
+        .big-title{
+            font-size: 6rem;
+        }
     }
 
     .author-wrapper{
         img{
             width: 300px;
-            
+            transform: translateY(46px);
         }
 
         &:before{
-            height: 452px;
+            height: 427px;
+            transform: translateY(29px);
+        }
+    }
+
+    .img-backdrop{
+        img{
+            width: 473px !important;
+            transform: translate(2px, 6px);
+        }
+    }
+    
+    .hero-meta-img{
+        img{
+            width: 473px !important;
+        }
+    }
+
+    .button-container,
+    .counter{
+        height: 95vh !important;
+    }
+
+    .social-media-nav{
+        ul{
+            li{
+                margin-bottom: 1em !important;
+            }
         }
     }
 
 
+    .author-content {
+        h1{
+            transform: translate(-80px, 57px);
+            position: relative;
+            z-index: -1;
+        }
+    }
+
+    .author-name{
+        .tag-author{
+            font-size: 13px;
+            margin-top: 2em;
+        }
+    }
 }
+
+
 
 @media only screen and (max-width: 1260px){
     .nav-list{
         li{
             a{
-                font-size: 5em;
+                // font-size: 5em;
             }
         }
     }

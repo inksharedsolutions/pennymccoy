@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 @import 'banner';
 @import 'navigation';
@@ -67,7 +68,7 @@ button{
 
     background-color: #1e2328;
     border: none;
-    padding: 7% 35px;
+    padding: 13% 18px;
     margin-top: 6%;
     color: #ffff;
     border: 1px solid #404040;
@@ -122,14 +123,15 @@ button{
 .btn-prev,
 .btn-next{
     margin: 0 5px;
+    border-radius: 50%;
     
     &:hover{
         cursor: pointer;
+        background: #fb9c00;
     }
 }
 
-
-.active-page{
+.active-page{ 
     position: static !important;
     opacity: 1 !important;
     pointer-events:auto;
@@ -138,4 +140,22 @@ button{
 .section-parent-book-trailer{
     position: relative;
     z-index: 10;
+}
+
+
+/*Columns*/
+
+.grid-two-columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+// .body-content-elements{
+//     display: flex;
+// }
+
+.book-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

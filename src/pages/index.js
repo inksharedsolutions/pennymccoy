@@ -17,7 +17,6 @@ const IndexPage = () => {
 
   useEffect(()=>{
 
-
   }, parentState , _pF)
 
   return(
@@ -25,7 +24,7 @@ const IndexPage = () => {
       <Fblock/>
       <BookTrailer/>
       <Author/>
-      <Artwork/>
+      <Artwork/> 
       <Button activePage={(num)=> _pF(num) }/>
       <Counter num={parentState} />
     </Layout>
