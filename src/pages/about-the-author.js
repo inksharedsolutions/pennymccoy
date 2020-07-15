@@ -16,9 +16,12 @@ const ABA = (props)=>{
                         bgImage={require('../../static/banner/web_banner.png')}
                         >
                             <div className="container-gt">
-                                <div className="grid-two-columns" id="banner-layout-responsive">
-                               
-                                </div>
+                                <section className="heading-non-front-banner">
+                                    <h1>
+                                        <span>About the</span>
+                                        <span>Author</span>
+                                    </h1>
+                                </section>
                             </div>
                     </Parallax>
                 </section>
@@ -35,8 +38,8 @@ const ABA = (props)=>{
                                 <div className="author-content-wraps">
 
                                      <h1 className="backdrop-heading">
-                                        <span>Lorem Ipsum</span>
-                                         <span>Dolor impusm</span>
+                                        <span>Author</span>
+                                         <span>quote</span>
                                      </h1>
 
                                      <h1>

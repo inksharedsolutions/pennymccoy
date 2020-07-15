@@ -18,13 +18,13 @@ const Layout = ({
 
   const mainRefs = useRef(null);
 
+
   useEffect(()=>{
 
     const childElem = mainRefs.current.querySelectorAll('.hero-page')
 
     childElem.forEach( ( el , indx) => {
       removeActiveElements(el , indx);
-
         /*
         *  (mainActivePage - 1) Set Active Page to 0 since index start at (0)
         */
@@ -34,7 +34,6 @@ const Layout = ({
         }
     });
     
-   
   },[mainActivePage])
 
 
@@ -49,8 +48,6 @@ const Layout = ({
     const prevSibling =  el.previousSibling;
     const nextSibling =  el.nextSiblings;
 
-
-    
     TweenMax.to(prevSibling, 1,{
       opacity :1,
       position: 'absolute',
@@ -65,9 +62,16 @@ const Layout = ({
 
   return (
     <>
+      {/* Animation Linear */}
+      <div className="linear-animation"> 
+          <span></span>
+          <span></span> 
+          <span></span> 
+      </div>
+
       <Header siteTitle={`Penny Mccoy`} />
       <SideBar />
-
+  
         <main className="pages" ref={mainRefs}>
           {
             children

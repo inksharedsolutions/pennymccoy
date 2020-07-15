@@ -1,11 +1,19 @@
 import React from 'react'
 import AuthorImg from '../../static/author/author_img.png'
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
-
-const Author = () =>{
+const Author = (props) =>{
     return(
        <> 
            <section className="hero-page block-wrapper author-section">
+
+                {
+                    props.activeEl && ( 
+                        <div className="linear-width-author-sect"></div>
+                    )
+                }
+
+
                 <div className="container">
                     <div className="section-author-content">
                         <div className="col-two-grid-element">
@@ -23,10 +31,11 @@ const Author = () =>{
                                 </h1>
 
                                 <p>
-                                    Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. 
-                                    Lorem Ipsum has been the industry's 
-                                    standard dummy text ever since the 1500s,
+                                    I was raised by my parents Dave and Roma McCoy. 
+                                    I grew up and worked with our family business, 
+                                    in the Mammoth Mountain Ski Area in a pioneering 
+                                    atmosphere that innately knows that champions are born 
+                                    as well as nurtured.
                                 </p>
 
                                 <p className="author-name">

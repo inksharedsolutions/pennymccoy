@@ -5,6 +5,50 @@
     overflow: hidden;
 }
 
+.heading-contact{
+
+    text-transform: uppercase;
+    font-size: 3rem;
+
+    span{
+        font-size: 1em;
+        color: #ff9800;
+    }
+}
+
+.heading-non-front-banner{
+    
+    display: flex;
+    height: 300px;
+    align-items: flex-end;
+    margin: 0 9%;
+
+    
+
+    h1{
+        span{
+
+            &:nth-child(1){
+                text-transform: uppercase;
+                font-weight: 100;
+                letter-spacing: 20px;
+                font-size: 16px;
+                margin-left: 15px;
+                margin-bottom: 13px;
+                display: block;
+            }
+
+            &:nth-child(2){
+                display: block;
+                font-size: 4rem;
+                text-transform: uppercase;
+                margin-bottom: 26px;
+                color: #ff9800;
+            }
+        }
+    }
+}
+
 .react-parallax {
     overflow: initial !important;
 }
@@ -77,7 +121,7 @@
     justify-content: center;
 
     img{
-        width: 164px;
+        width: 264px;
         border-radius: 50%;
         border: 15px solid #eeeeff1c;
         transform: translateY(-135px);
@@ -108,7 +152,7 @@
 .author-quote{
     font-size: 21px;
     font-weight: 100;
-    margin-left: 15% !important;
+    margin-left: 7% !important;
     color: #cd8441;
     letter-spacing: 1px;
     font-style: italic;

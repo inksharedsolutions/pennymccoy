@@ -9,26 +9,28 @@ const Navigation = ()=>{
     const pages = [
         'Home',
         'About-the-Author', 
-        'About-the-Book', 
+        'About-the-Book',
         'Contact'
    ]
 
    function capitalize(string) {
        return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
    }
-   
 
    let Listed = pages.map((e, i) =>{
         
        var newUrl = ((e).replace(/[ /]/g,"-").trim().toLowerCase());
-       let filterUrl = (newUrl === 'home') ? '/' : newUrl;
+       let filterUrl = (newUrl === 'home') ? '/' : `/${newUrl}`;
 
        const res = e.replace(/[-/]/g," ").trim();
    
        return (
            <li>
                <AniLink
-                   to={filterUrl}>
+                    cover to={filterUrl}
+                    duration={2} 
+                    bg="linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(255,130,95,1) 0%, rgba(252,176,69,1) 100%)"
+                    >
                     <span>
                         {`0${i + 1}.`}
                     </span>
@@ -39,9 +41,6 @@ const Navigation = ()=>{
    })
 
    useEffect(()=>{
-    
-    console.log(burgerState);
-
 
    }, [burgerState, __burgerFunc])
 
@@ -49,7 +48,7 @@ const Navigation = ()=>{
  
     return(
         <> 
-            <nav className="navigation">
+            <nav className="navigation" style={{zIndex : (burgerState) ? '10': '61'}}>
                 <li>
                     <img src={``}/>
                 </li>

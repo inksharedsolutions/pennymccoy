@@ -23,13 +23,17 @@ const ATB = (props)=>{
                     <Parallax 
                         bgImageAlt="the cat"
                         strength={300}
-                        bgImage={require('../../static/banner/web_banner.png')}
-                        >
-                            <div className="container-gt">
-                                <div className="grid-two-columns" id="banner-layout-responsive">
-                               
-                                </div>
-                            </div>
+                        bgImage={require('../../static/banner/web_banner.png')}>
+                        
+                        <div className="container-gt">
+                                <section className="heading-non-front-banner">
+                                    <h1>
+                                        <span>About the</span>
+                                        <span>Book</span>
+                                    </h1>
+                                </section>
+                        </div>
+
                     </Parallax>
                 </section>
                 

@@ -8,7 +8,7 @@
     position: absolute;
     width: 100%;
     background: #292e33;
-    z-index: 50;
+    // z-index: 999;
 
     li{
         list-style-type: none;
@@ -97,7 +97,7 @@
 }
 
 .navigations-body{
-    position: absolute;
+    position: fixed;
     background: #292E33;
     width: 100%;
     left: 0;
@@ -122,14 +122,14 @@
         letter-spacing: 5px;
         text-transform: uppercase;
         font-weight: 100;
-        color: #ff9800;
+        color: #3e4b5a;
     }
 }
 
 .hamburger-parent-x-mark{
     float: right;
-    background: #FF9800;
-    padding: 12px;
+    background: #272c31;
+    padding: 17px;
 
     /*X Mark*/
 
@@ -163,7 +163,7 @@
         margin-bottom: 3em;
 
         a{
-            font-size: 4em;
+            font-size: 3.5em;
             color: #fff;
             text-decoration: none;
             font-weight: bold;

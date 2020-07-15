@@ -1,24 +1,52 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useRef} from 'react';
 import BookTrailer  from '../../static/video/book_trailer.mp4'
 
 import "../../node_modules/video-react/dist/video-react.css"; // import css
 import { Player } from 'video-react';
 
-const BookTrailerComponents = () =>{
+const BookTrailerComponents = (props) =>{
     
     const [state, __func] = useState(false);
+    const action =  useRef(null);
+    const mounted = useRef();
 
+    /*Before mount...*/
     useEffect(()=>{ 
-
+        let isSubscribe = true;
         if(typeof(window) !== 'window' ||  typeof(window) === 'object'){
-            __func(true);
+            __func(true);    
         }
 
-    },[state, __func])
+        /* check if has a active-page class */
+        // const isActive = action.current;
+        // console.log(isActive.classList[3] ==='active-page');
+        
+
+        if(props.activeEl ){
+            console.log(props.activeEl);
+        }
+        
+        
+        return ()=> isSubscribe =false
+
+    },[[action,state] ,__func])
+
+
+    /*After mount...*/
+
+
+
 
     return(
         <>
-            <section className="hero-page block-wrapper section-book-trailer">
+            <section className="hero-page block-wrapper section-book-trailer" ref={action}>
+                
+                {
+                    props.activeEl && ( 
+                        <div className="linear-width"></div>
+                    )
+                }
+               
                 <div className="container">
                     <div className="section-parent-book-trailer">
                         <div className="col-two-grid-element">

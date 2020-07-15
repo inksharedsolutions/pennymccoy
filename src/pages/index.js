@@ -22,9 +22,9 @@ const IndexPage = () => {
   return(
     <Layout mainActivePage={parentState}>
       <Fblock/>
-      <BookTrailer/>
-      <Author/>
-      <Artwork/> 
+      <BookTrailer activeEl={parentState==2} />
+      <Author activeEl={parentState==3} />
+      <Artwork activeEl={parentState==4} /> 
       <Button activePage={(num)=> _pF(num) }/>
       <Counter num={parentState} />
     </Layout>

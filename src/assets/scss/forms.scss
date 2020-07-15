@@ -1,0 +1,151 @@
+.formInputs{
+    margin-top: 11px !important;
+    padding: 0.89em 0.246em !important;
+    border: 1px solid #cccccc !important;
+    color: #dadadaee !important;
+    border-radius: 1px !important;
+    width: 100% !important;
+    max-width: 100%;
+    background: #292e34;
+}
+
+.flex-container-fx{
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 12% 0;
+}
+.info-section-address{
+    text-align: center;
+    margin: 6% 0;
+    span{
+        display: block !important;
+        margin-bottom: 3%;
+        h5{
+            margin-bottom: 2%;
+        }
+    }
+}
+
+.columns-grid-parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3%;
+}
+
+#form-wrapper, #textAreaContainer{
+    label{
+        display: block;
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin-bottom: 13px;
+        color: #fff;
+    }
+}
+       
+.asterisk {
+    color: #fd1111;
+    padding: 7px;
+}
+
+.contactMessage{
+    font-size: 25px !important;
+    margin-bottom: 24px !important; 
+}
+
+.flexMainContainer{
+    margin: 71px 0;
+}
+
+.textArea{
+    height: 250px;
+    border: 1px solid #cecece;
+    width: 100%;
+    background: #292e34;
+    color: #f1ededee !important;
+    padding: 10px;
+}
+
+.abtiaryButton{
+    padding: 13px 74px;
+    border: none;
+    background: #1f252b;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 39px;
+}
+
+.buttonContainer{
+     text-align: center;
+}
+
+.notValidForm{
+    margin-top: 11px !important;
+    padding: 1px 6px !important;
+    border: 1px solid #ffa8a8ee !important; 
+    color: #636363ee !important;
+    border-radius: 1px !important;
+    width: 97% !important;
+    max-width: 100%;
+}
+
+.invalidMessage{
+    color: #e83f3f; 
+}
+
+.errorHandler{
+    background: #f18d8d;
+    padding: 18px;
+    margin-bottom: 45px;
+    border-radius: 7px;
+    color: #efff;
+}
+
+.spanErrorRequired{
+    color: #ff8a8a;
+}
+
+.CommentSection{
+    margin-bottom: 50px;
+}
+
+.content_body_paragraphs{
+    margin: 106px 0;
+    line-height: 2;
+}
+
+.booklinkBlocks{
+    background: none !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    line-height: normal !important;
+    height: auto; 
+    margin-top: 20px;
+    text-align: right;
+
+    span{
+        margin-right: 13px;
+        display: block;
+        margin-bottom: 16px;
+        font-style: italic;
+        font-size: 12px;
+        color: #fff !important;
+    }
+
+    li{
+        list-style: none;
+        display: inline-block;
+        padding: 0 4px;
+    }
+     
+    a{
+        text-decoration: none;
+        background: #933d36;
+        padding: 4px 15px;
+        color: #fff !important;
+        font-size: 13px;
+    }
+}
+
+.ata-name{
+    color: #fff !important;
+}

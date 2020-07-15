@@ -198,6 +198,10 @@
         display: block;
         font-size: 4rem;
     }
+
+    p{
+        font-size: 1em;
+    }
 }
 
 .author-name{
@@ -273,7 +277,7 @@
     right: 11%;
 
     .counter-active{
-        font-size: 38px;
+        font-size: 28px;
         font-weight: bold;
         color: #ffff;
         transform: translateX(-13px);
@@ -283,7 +287,7 @@
 
     .limit{
         color: #ff9d00;
-        -webkit-transform: translate(10px, -33px);
+        -webkit-transform: translate(8px, -25px);
         -moz-transform: translateY(-20px);
         font-weight: bold;
     }
@@ -294,3 +298,65 @@
         margin: 0;
     }
 }
+
+
+/*Linear Animation*/
+
+.linear-animation{
+
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    z-index: 61;
+
+    span{
+        height: 33.5%;
+        position: absolute;
+        width: 0;
+
+        &:nth-child(1){
+            animation: linear-move 2.5s cubic-bezier(0.19,1,0.22,1) backwards;
+            animation-delay: 0.5s;
+            background: #2c323a;
+        }
+
+        &:nth-child(2){
+            top: 33.5%;
+            animation: linear-move 2.5s cubic-bezier(0.19,1,0.22,1) backwards;
+            animation-delay: 1s;
+            background: #292f38;
+        }
+        &:nth-child(3){
+            top: 66%;
+            animation: linear-move 2.5s cubic-bezier(0.19,1,0.22,1) backwards;
+            animation-delay: 1.5s;
+            background: #1d2127;
+        }
+    }
+}
+
+.linear-width,
+.linear-width-author-sect{
+    background: #14181f;
+    height: 100vh;
+    position: absolute;
+    width: 0%;
+    z-index: 100;
+    left: 0;
+    animation: linear-move 3.5s cubic-bezier(0.19,1,0.22,1) backwards;
+    animation-delay: 0.5s;
+}
+
+
+@keyframes  linear-move {
+    0%{
+        width: 100%;
+        left:0;
+    }
+
+    100%{
+        width: 0;
+        left: 0;
+    }
+}
+
