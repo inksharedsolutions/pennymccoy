@@ -13,12 +13,11 @@ import Counter from "components/counter"
 const IndexPage = () => {
 
   const [parentState, _pF] = useState(1);
-
-
+    
   useEffect(()=>{
 
   }, parentState , _pF)
-
+      
   return(
     <Layout mainActivePage={parentState}>
       <Fblock/>

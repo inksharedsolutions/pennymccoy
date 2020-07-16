@@ -16,7 +16,7 @@ import Book4 from '../../static/artworks/5.jpg'
 import Book5 from '../../static/artworks/6.jpg'
 
 
-const Artwork = ()=>{
+const Artwork = (props)=>{
 
     const [mobState, __functState] = useState(false);
 
@@ -43,6 +43,13 @@ const Artwork = ()=>{
     return(
         <>
              <section className="hero-page block-wrapper artwork-contents">
+
+                {
+                    props.activeEl && ( 
+                        <div className="linear-width-artwork"></div>
+                    )
+                }
+
                 <div className="container">
                     <div className="artwork-author-content">
                         <div className="col-two-grid-slider-element">

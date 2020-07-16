@@ -1,8 +1,9 @@
-import React, {useEffect, useState, useRef} from 'react';
+import React, {useEffect, useState, useRef} from 'react'
 import BookTrailer  from '../../static/video/book_trailer.mp4'
-
+import {TweenMax ,TimelineMax, Power3} from 'gsap'
 import "../../node_modules/video-react/dist/video-react.css"; // import css
-import { Player } from 'video-react';
+import { Player } from 'video-react'
+import { element } from 'prop-types';
 
 const BookTrailerComponents = (props) =>{
     
@@ -14,16 +15,33 @@ const BookTrailerComponents = (props) =>{
     useEffect(()=>{ 
         let isSubscribe = true;
         if(typeof(window) !== 'window' ||  typeof(window) === 'object'){
-            __func(true);    
+            __func(true);
         }
-
-        /* check if has a active-page class */
-        // const isActive = action.current;
-        // console.log(isActive.classList[3] ==='active-page');
         
+        /* if component is active*/
+        if( props.activeEl){
+                
+            const elemTitle =  action.current.querySelectorAll('.heading-trailer')
 
-        if(props.activeEl ){
-            console.log(props.activeEl);
+            setTimeout(()=>{
+
+                elemTitle.forEach((el, indx)=>{
+                    const spanElem = el.querySelectorAll('.big-heading-trailer .hidden-parent span');
+                 
+               
+                    (new TimelineMax)
+                        .staggerTo( spanElem[0], 0.8, {
+                            y:0,
+                            ease : Power3.out
+                        })
+                        .staggerTo( spanElem[1], 1, {
+                            y:0,
+                            ease : Power3.out
+                        })
+                    
+                })
+
+            },1500)
         }
         
         
@@ -53,8 +71,12 @@ const BookTrailerComponents = (props) =>{
                             <div className="grid-child heading-trailer">
                                 
                                 <h1 className="big-heading-trailer"> 
-                                    <span>Book</span>
-                                    <span>Trailer</span>
+                                    <span className="hidden-parent">
+                                        <span>Book</span>
+                                    </span>
+                                    <span className="hidden-parent">
+                                        <span>Trailer</span>
+                                    </span>
                                 </h1>
 
                                 <p>

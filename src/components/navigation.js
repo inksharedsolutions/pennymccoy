@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
+import {TweenMax ,TimelineMax, Power3} from 'gsap'
+
+
 
 const Navigation = ()=>{
 
     const [burgerState, __burgerFunc] = useState(false);
-
+    
 
     const pages = [
         'Home',
@@ -34,7 +37,9 @@ const Navigation = ()=>{
                     <span>
                         {`0${i + 1}.`}
                     </span>
+                    <span className="list-name">
                         {res}
+                    </span>
                </AniLink>
            </li>
        )
@@ -48,7 +53,7 @@ const Navigation = ()=>{
  
     return(
         <> 
-            <nav className="navigation" style={{zIndex : (burgerState) ? '10': '61'}}>
+            <nav className="navigation" style={{zIndex : (burgerState) ? '10': '60'}}>
                 <li>
                     <img src={``}/>
                 </li>
@@ -72,30 +77,29 @@ const Navigation = ()=>{
          
             </nav>
 
-            {
-                burgerState && (
-                    <nav className="navigations-body">
-                        <div className="container">
-                            <div className="nav-header">
-                                <h1>Navigations</h1>
-                                <div>
-                                    <span className="hamburger-parent-x-mark" onClick={()=>__burgerFunc(!burgerState)}>
-                                        <span className="hamburger-x-mark"></span>
-                                        <span className="hamburger-x-mark"></span>
-                                    </span>
-                                </div>
-                            </div>
-                            
-            
-                            <nav className="nav-list">
-                                {
-                                    Listed
-                                }
-                            </nav>
+           
+            <nav className={`navigations-body ${burgerState? 'is-open':'is-closed'}`}>
+                <div className="container">
+                    <div className="nav-header">
+                        <h1>Navigations</h1>
+                        <div>
+                            <span className="hamburger-parent-x-mark" onClick={()=>__burgerFunc(!burgerState)}>
+                                <span className="hamburger-x-mark"></span>
+                                <span className="hamburger-x-mark"></span>
+                            </span>
                         </div>
+                    </div>
+                    
+    
+                    <nav className="nav-list">
+                        {
+                            Listed
+                        }
                     </nav>
-                )
-            }
+                </div>
+            </nav>
+            
+            
 
         </>
     )

@@ -55,7 +55,7 @@ h5,h6{
 }
 
 
-p,a,qoute,span,blockquote{
+a,qoute,span,blockquote{
     font-size: 1.2em;
     color: #e6e6e6ee;
 }
@@ -64,6 +64,7 @@ p,a,qoute,span,blockquote{
 p{
     line-height: 1.7;
     margin: 1.2em 0 !important;
+    color: #a0a0a0;
 }
 
 button{
@@ -95,8 +96,17 @@ button{
 }
 
 .big-heading-trailer{
-    span{
+    .hidden-parent{
         display: block;
+        line-height: 1;
+        overflow: hidden;
+
+        span{
+            line-height: 1;
+            font-size: 1em;
+            display: block;
+            transform: translateY(90px);
+        }
     }
 }
 
