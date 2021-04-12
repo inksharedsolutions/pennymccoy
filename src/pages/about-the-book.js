@@ -54,7 +54,6 @@ const ATB = (props)=>{
                             pad to destiny and freedom`,
 
                             ebooks:{
-                                stratton: 'https://www.stratton-press.com/books/from-an-out-house-to-the-white-house-and-then-some/',
                                 barnes: 'https://www.barnesandnoble.com/w/from-an-out-house-to-the-white-house-hal-davis/1136867362?ean=9781648950179',
                                 amazon:'https://www.amazon.com/Out-House-White-Then-Some-ebook/dp/B0875KQW9Q/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1588017993&sr=8-1', 
                             },
